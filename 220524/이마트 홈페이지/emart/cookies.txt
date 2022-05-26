@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+store.emart.com	TRUE	/	FALSE	1999999999	JSESSIONID_Container3	Cpuy7v5LcXqbmfhl4k6ldmNw1is7vdpcRfBvnKgidrmm1I0c7OqpJJaJyQ42S55J.YnNtYXJ0X2RvbWFpbi9ic21hcnQtd2FzMV9jb250YWluZXIz
+store.emart.com	TRUE	/	FALSE	1999999999	LOG_LIVENEW_COOKIE	DF2ADF407DA7012EE053231D64AEADCB
+store.emart.com	TRUE	/	FALSE	1999999999	LOG_TEMP_COOKIE	DF2AE05F85740150E053231D64AE4E80
+store.emart.com	TRUE	/	FALSE	1999999999	WMONID	QTxAF1EHRXx
+

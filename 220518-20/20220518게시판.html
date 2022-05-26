@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mybox1{text-align:center; width: 17%;}
+        .mybox11{text-align:center; width: 8%;}
+        .mybox2{color:white; background-color: rgb(122, 204, 236); text-align:center; width: 52%; }
+        .mybox22{color:white; background-color: rgb(122, 204, 236); text-align:center; width: 8%; }
+        .mybox3{color:white; background-color: rgb(122, 204, 236); text-align:center; width: 17%; }
+        .mybox33{color:black; text-align:center; width: 52%; }
+        .mybox4{margin-left: 100px;  width: 100px;}
+        .tdTest{height: 10px;}
+        .mybox5{border-collapse: collapse; height: 15px;}
+        .black{color: #d7d7d7; border: solid 1px #333;
+            background:-webkit-gradient(linear, left top, left bottom, from(#666), to(#000));}
+    </style>
+</head>
+<body>
+    <h2>게시판</h2>
+    <table border="0">
+        <tr>
+            <hr></hr>
+            <td class="tdTest"> 
+                <div style="width:250px;" >▷총 3개의 게시물이 있습니다.</td></div>
+            <td>
+                <div style="color:rgb(233, 233, 233); width:70px; margin:0px;" >SELECT</td></div>
+            <td><form>
+                        <SELECT NAME="SELECT">
+                            <OPTION VALUE="번호" SELECTED="SELECTED">번호</OPTION>
+                            <OPTION VALUE="제목">제목</OPTION>
+                            <OPTION VALUE="글쓴이">글쓴이</OPTION>
+                            <OPTION VALUE="일시">일시</OPTION>
+                        </SELECT>
+                    <td><INPUT TYPE="TXET"></IMPUT></td>
+                    <td><BUTTON TYPE="SUBMIT" VALUE="확인">검색</BUTTON></td>
+                </form>
+            </td>
+        </tr>
+    </table>
+        <hr></hr>
+
+    <table class="mybox5" >
+        <tr>
+            <td span class="mybox22">번호</td>
+            <td span class="mybox2">제목</td>
+            <td span class="mybox3">글쓴이</td>
+            <td span class="mybox3">일시</td>
+            <td span class="mybox3">조회수</td>
+        </tr>
+    </table>
+    <table class="mybox5" >
+        <tr>
+            <td span class="mybox11">1</td>
+            <td span class="mybox33"><a href="220518-20\20220520글보기.html"tatger="_blank">게시글 1 입니다.</a></td>
+            <td span class="mybox1">김준석</td>
+            <td span class="mybox1">2022-05-16</td>
+            <td span class="mybox1">15</td>
+            </tr>
+        <tr>
+            <td span class="mybox11">2</td>
+            <td span class="mybox33"><a href="http:naver.com"tatger="_blank">게시글 2 입니다.</a></td>
+            <td span class="mybox1">김준석</td>
+            <td span class="mybox1">2022-05-16</td>
+            <td span class="mybox1">15</td>
+        </tr>
+        <tr>
+            <td span class="mybox11">3</td>
+            <td span class="mybox33"><a href="http:google.com"tatger="_blank">게시글 3 입니다.</a></td>
+            <td span class="mybox1">김준석</td>
+            <td span class="mybox1">2022-05-16</td>
+            <td span class="mybox1">15</td>
+        </tr>
+        
+    </table>
+    <table>
+        <tr>
+            <from>
+                <td><div style="margin-left: 250px;">◀ 이전</td></div>
+                <td>1</td>
+                <td><a href="202205182.html">2</a></td>
+                <td>다음 ▶</td>
+                <td><div style="margin-left: 130px;">
+                    <BUTTON TYPE="목록">목록</BUTTON>
+                </td></div>
+                <td><div span class="black">
+                    <BUTTON TYPE="목록" ><strong><a href="20220519글쓰기.html">글쓰기</a></strong></BUTTON>
+                </td></div>
+            </from>
+        </tr>
+    </table>
+
+</body>
+</html>

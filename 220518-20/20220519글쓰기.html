@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 작성</title>
+    <style>
+        table   {border:"1"; border-collapse: collapse; width: auto; margin-left: 30px;}
+        .table1  {text-align: right; border-collapse: right; width: auto; margin-right: 30px;}
+        .hd1    {text-align: left; font-weight: 1200%; font-size: 20px; margin-left: 30px; margin-right: 30px;}
+        .hd2    {width: 636px; text-align: center; font-weight: 1000; font-size: 20px; background-color: rgb(214, 214, 214); margin-left: 30px; margin-right: 30px; } 
+        .hd5    {text-align: center; border: 1px ; height: 200px; width: 100px auto;}
+        .hd6    {text-align: left; margin-left: 30px;}
+        .hd7    {text-align: right; margin-left: 30px;}
+        .hd2-1  {margin-left:20px; border: 1px solid rgb(80, 206, 132);}
+        .buc0   {color: #d7d7d7; border: solid 1px #333;
+                   background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));}
+        .but0   {display: inline-block; zoom: 1; vertical-align: baseline; outline: none; cursor: pointer;
+                  text-align: center; text-decoration: none; padding: .5em 2em .10em; text-shadow: 0 1px 1px rgb(0 0 0 / 30%); margin-right: 1px;}
+        .buc1   {color: #d7d7d7; border: solid 1px #333;
+                   background: -webkit-gradient(linear, left top, left bottom, from(rgb(182, 181, 181)), to(#666));}
+        .but1   {display: inline-block; zoom: 1; vertical-align: baseline; outline: none; cursor: pointer;
+                  text-align: center; text-decoration: none; padding: .5em 2em .10em; text-shadow: 0 1px 1px rgb(0 0 0 / 30%); margin-right: 30px;}
+        </style>
+</head>
+<body>
+    <P class="hd1">게시판</P>
+    <p>
+        <table>
+            <tr>
+                <td class="hd2">글 쓰기</td></tr></p>
+    <p>           
+        <table class="hd5" border="2">
+
+                    <tr>
+                    <td>이름</td>
+                        <td class="hd6">
+                            <input class="hd2-1" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>제목
+                        <td class="hd6"><input class="hd2-1" type="text"></td></tr>
+                    <tr>
+                        <td>내용</td>
+                        <td class="hd6"><textarea class="hd2-1" rows="10" cols="80% auto"></textarea></td></tr>
+                        <td>업로드</td>
+                        <td class="hd6"></textarea> <button type="submit" ><input type="file"></button></td>
+                </table>
+    </p>
+    <p>
+        <table class="hd7">
+            <tr>
+            <th>
+                <button type="submit" class="buc0 but0" style="padding-right: 20px;padding-left: 20px;margin-right: 1px;margin-left: 1px;">완료</button>
+                <button type="submit" class="buc1 but1" style="padding-right: 20px;padding-left: 20px; margin-right: 1px; margin-left: 1px;">목록</button>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

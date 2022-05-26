@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS4 Grid System</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template:70px 1fr 70px / 2001fr;
+            grid-gap: 5px;
+            grid-template-areas:
+                'header header'
+                'aside contenr'
+                'footer footer';
+            }
+        [class*=cell] {
+            box-sizing: border-box;
+            border: 5px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            }
+            .cell-header    { grid-area: header; }
+            .cell-aside     { grid-area: aside;}
+            .cell-content   { grid-area: content;}
+            .cell-footer    {grid-area: footer;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cell-header">
+            <h1>Lorem ipsum dolor sit amet</h1>       
+    </div>
+    <div class="cell-aide">
+        <p>Lorem ipsum</p>
+        <p>dolor sit amet</p>
+        <p>dolor sit amet</p>
+    </div>
+    <div class="cell-content">
+        <h1>Lorem opsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet</p>
+        <P>Lorem ipsum dolor sit amet</P>
+    </div>
+    <div class="cell-footer">Lorem ipsum dolor sit amet</div>
+</body>
+</html>
