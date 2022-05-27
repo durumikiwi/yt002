@@ -7,7 +7,58 @@
     <title>Document</title>
     <style>
         /*목록 선택 스타일 000선생님 스타일*/
- 
+     /* nav */
+     .navi{
+        display: flex;
+        justify-content: space-around;
+        font-size:x-large;
+        font-weight: 800;
+        margin-left: 0px
+    }
+    .nav1 li{
+        list-style-type:none;
+        float:left;
+        margin:30px;
+    }
+    .nav1> ul> li:hover{
+        text-decoration: underline black;
+    }
+    .nav1:hover{
+        text-decoration: underline black;
+    }
+    /* .mainmenu > li{
+        margin-left: 7px;
+    } */
+    .menu{
+        position: relative;
+    }
+    .submenu{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 30px;
+        left: -200px;
+        width: 400px;
+    }
+    .submenu > li{
+        font-size: 13px;
+        font-weight: 100px;
+        padding: 0px;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    .submenu li:hover{
+        text-decoration: underline black;
+    }
+    .mueu li{
+        margin: 0px;
+    }
+    .menu:hover .submenu{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+
         /* 여기까지 백소연선생님 스타일*/
         /*.evetmain100{float: center;}*/
 
@@ -26,12 +77,12 @@
         .such022{width: 300px; height: 150px; border: 0px;}
         /*세부 스타일*/
         .a001 {text-decoration: none; color: black;}
-        .a002 {text-decoration: none;  font-size: 14px; font-weight: 1000; color: black;}
+        .a002 {text-decoration: none; font-weight: 1000; font-size: small; color: black;}
         .a003 {font-weight: 500; font-size: small; color: black;}
-        .a004 {text-decoration: none; font-size: 1em; font-weight: 1000; color: black;}
+        .a004 {text-decoration: none; font-weight: 1000; color: black;}
 
         /*글자 스타일*/
-        h10{font-size: 13px; color: gray;}
+        h10{font-size: small; color: gray;}
         h11{color: black; font-weight: 600;}
 
         /*이미지 스타일*/
@@ -39,16 +90,31 @@
         .img002{position: absolute; right: 0.5em;}
         .img003{position: absolute; right: 0.5em;}
         .img004{position: absolute; right: 0.5em;}
-
         tr{border: 0;}
 
     </style>
 </head>
 <body>
     <!--메인 머릿글-->
-
-    <!--이벤트 1page 메인-->
-    
+    <nav class="navi">
+        <div class="nav1">
+            <ul class="mainmenu">
+                <li><a href="">점포찾기</a></li>
+                <li><a href="">전단광고</a></li>
+                <li><img src="img\e-mart.png" width="121" height="30" ></li>
+                <li><a href="220524\이마트 홈페이지\이마트 만들기\이벤트 0 전체 연습용.html">이벤트</a></li>
+                <li class="menu"><a href="">고객센터</a>
+                    <ul class="submenu" >
+                        <li><a href="이마트 공지사항.html">공지사항</a></li> 
+                        <li><a href="">자주하는질문</a></li> 
+                        <li><a href="">고객문의</a></li>
+                        <li><a href="">고객만족제도</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--이벤트 1page 메인-->    
     <div align="center" class="evetmain200">
         <table border="0">
             <tr>
@@ -78,14 +144,14 @@
             <tr>
                 <!--1행1열-->
                 <td class="evetmain400">
-                <a class="img001 a001" href="이벤트 0-1-1글 항공사 마일리지 적립사용 안내.html"><img class="such022" src="img\항공사 마일리지 적립사용 안내 노출 태그.jpg"></img><img class="img002" src="img\안내.png"></img></a>
+                <a class="img001 a001" href="이벤트 0-1-1글 항공사 마일리지 적립사용 안내.html"><img class="such022" src="img\항공사 마일리지 적립사용 안내 노출 태그.jpg"></img><img class="img002" src="img\안내.png"></img></a></span>
                 </td>
                 <!--1행2열-->
                 <td class="evetmain400">
-                    <a class="img001 a001" href="이벤트 0-4-1 글 가정의달 당첨자.html"><img class="such022" src="img\가정의달 댓글 이벤트 당첨자 발표 노출 태그.jpg"></img><img class="img002" src="img\당첨발표.png"></img></a>
+                    <a class="a001" href="이벤트 0-4-1 글 가정의달 당첨자.html"><img class="such022" src="img\가정의달 댓글 이벤트 당첨자 발표 노출 태그.jpg"></img></a>
                 <!--1행3열-->
                 <td class="evetmain400">
-                    <a class="img001 a001" href="이벤트 0-4-2 글 전단 빙고 이벤트.html"><img class="such022" src="img\전단상품 구매 이벤트 당첨자 발표 노출 사진.jpg"></img><img class="img002" src="img\당첨발표.png"></img></a>
+                    <a class="a001" href="이벤트 0-4-2 글 전단 빙고 이벤트.html"><img class="such022" src="img\전단상품 구매 이벤트 당첨자 발표 노출 사진.jpg"></img></a>
                     <br>
                 </td>
             </tr>
@@ -114,14 +180,14 @@
             <tr>
                 <!--2행1열 ok-->
                 <td class="evetmain400 td001">
-                <a class="img001 a001" href="이벤트 0-4-3 글 한돈 경품 응모 이벤트.html"><img class="such022" src="img\한돈 경품 응모 이벤트 노출 사진.jpg"></img><img class="img002" src="img\당첨발표.png"></img></a>
+                <a class="a001" href="이벤트 0-4-3 글 한돈 경품 응모 이벤트.html"><img class="such022" src="img\한돈 경품 응모 이벤트 노출 사진.jpg"></img></a></span>
                 </td>
                 <!--2행2열-->
                 <td class="evetmain400">
-                    <a class="img001 a001" href=""><img class="such022" src=""></img></a>
+                    <a class="a001" href=""><img class="such022" src=""></img></a>
                 <!--2행3열-->
                 <td class="evetmain400">
-                    <a class="img001 a001" href=""><img class="such022" src=""></img></a>
+                    <a class="a001" href=""><img class="such022" src=""></img></a>
                     <br>
                 </td>
             </tr>
